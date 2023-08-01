@@ -1,0 +1,106 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-01T19:12:18.122Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12541036000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.preCondition()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "checking the table of people\u0027s details",
+        "description": "",
+        "id": "check-functionalities-on-website;checking-the-table-of-people-s-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1313110000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "From main menu click on \u0027Sort and Tables\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Sort and Tables\u0027",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.TableSteps.from_main_menu_click_on(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12648000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Check if table contains more than 25 records",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.TableSteps.check_if_table_contains_more_than_records(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139345000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Sort the data by Age descending",
+            "match": {
+              "location": "steps.TableSteps.sort_the_data_by_age_descending()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14924000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Check if the 1st person in the table is older than 65",
+            "match": {
+              "arguments": [
+                {
+                  "val": "65",
+                  "offset": 51
+                }
+              ],
+              "location": "steps.TableSteps.check_if_the_1st_person_in_the_table_is_older_than(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@uitesting"
+          }
+        ]
+      }
+    ],
+    "name": "check functionalities on website",
+    "description": "",
+    "id": "check-functionalities-on-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Table.feature",
+    "tags": []
+  }
+]
